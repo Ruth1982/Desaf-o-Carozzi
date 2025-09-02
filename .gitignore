@@ -1,2 +1,15 @@
 data/data.csv
-data/data.csv
+
+# Ignorar archivos ZIP
+*.zip
+
+# Ignorar claves públicas
+*.pub
+
+# Ignorar archivos raros que empiecen con [
+[[]*
+
+# Carpeta de datos grande
+data/
+
+
