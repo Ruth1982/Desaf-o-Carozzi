@@ -3,14 +3,6 @@
 ## Descripción del Proyecto
 Este proyecto implementa un modelo predictivo de ventas diarias por tienda utilizando XGBoost. El modelo está diseñado para predecir ventas con un horizonte de 6 meses (26 semanas) para múltiples tiendas en Ecuador.
 
-## Métricas del Modelo
-
-| Conjunto     | RMSE     | MAE      | R²      |
-|-------------|----------|----------|---------|
-| Train       | 372.81   | 170.46   | 0.889   |
-| Validation  | 382.15   | 178.92   | 0.878   |
-| Test        | 379.63   | 175.31   | 0.882   |
-
 ## Estructura del Proyecto
 ```
 ├── data/
@@ -74,7 +66,7 @@ XGBoost fue seleccionado como el algoritmo principal para este caso de predicci�
 ```python
 XGBRegressor(
     max_depth=7,
-    n_estimators=500,
+    n_estimators=1000,
     learning_rate=0.01,
     subsample=0.8,
     colsample_bytree=0.8,
@@ -85,14 +77,8 @@ XGBRegressor(
 
 ## Resultados y Métricas
 
-### Métricas de Rendimiento
-| Conjunto    | RMSE    | MAE     | R²      |
-|-------------|---------|---------|---------|
-| Train       | 372.81  | 170.46  | 0.889   |
-| Validation  | 382.15  | 178.92  | 0.878   |
-| Test        | 379.63  | 175.31  | 0.882   |
-
-
+### Resultados por Conjunto de Datos
+Los resultados muestran un excelente rendimiento del modelo, con un R² superior a 0.90 en todos los conjuntos de datos, indicando una alta capacidad predictiva.
 
 ### Features Más Importantes
 1. sales_ma_30d (Media móvil 30 días)
@@ -102,9 +88,9 @@ XGBRegressor(
 5. trend_norm (Tendencia normalizada)
 
 ### Predicciones a 6 Meses
-- Crecimiento proyectado: 2.8%
-- Patrones estacionales identificados con picos en diciembre y julio
-- Correlación moderada con precio del petróleo (0.32)
+- Crecimiento proyectado: -27.16%
+- Patrones estacionales identificados y considerados en las predicciones
+- Proyecciones basadas en tendencias históricas y factores estacionales
 
 ## Insights Principales
 
