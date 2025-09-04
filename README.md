@@ -3,6 +3,14 @@
 ## Descripción del Proyecto
 Este proyecto implementa un modelo predictivo de ventas diarias por tienda utilizando XGBoost. El modelo está diseñado para predecir ventas con un horizonte de 6 meses (26 semanas) para múltiples tiendas en Ecuador.
 
+## Métricas del Modelo
+
+| Conjunto     | RMSE     | MAE      | R²      |
+|-------------|----------|----------|---------|
+| Train       | 372.81   | 170.46   | 0.889   |
+| Validation  | 382.15   | 178.92   | 0.878   |
+| Test        | 379.63   | 175.31   | 0.882   |
+
 ## Estructura del Proyecto
 ```
 ├── data/
@@ -80,9 +88,11 @@ XGBRegressor(
 ### Métricas de Rendimiento
 | Conjunto    | RMSE    | MAE     | R²      |
 |-------------|---------|---------|---------|
-| Train       | 324.15  | 198.43  | 0.912   |
-| Validation  | 342.28  | 209.67  | 0.895   |
-| Test        | 338.91  | 205.84  | 0.901   |
+| Train       | 372.81  | 170.46  | 0.889   |
+| Validation  | 382.15  | 178.92  | 0.878   |
+| Test        | 379.63  | 175.31  | 0.882   |
+
+
 
 ### Features Más Importantes
 1. sales_ma_30d (Media móvil 30 días)
