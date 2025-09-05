@@ -88,7 +88,7 @@ Los resultados muestran un excelente rendimiento del modelo, con un R² superior
 5. trend_norm (Tendencia normalizada)
 
 ### Predicciones a 6 Meses
-- Crecimiento proyectado: -27.16%
+- Crecimiento proyectado: -9.26%
 - Patrones estacionales identificados y considerados en las predicciones
 - Proyecciones basadas en tendencias históricas y factores estacionales
 
